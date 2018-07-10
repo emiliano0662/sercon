@@ -1,0 +1,19 @@
+{
+  "name": "sercon",
+  "version": "1.0.0",
+  "description": "Maqueta Sercon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliano0662/sercon.git"
+  },
+  "author": "Emiliano carreño\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliano0662/sercon/issues"
+  },
+  "homepage": "https://github.com/emiliano0662/sercon#readme"
+}
