@@ -1,17 +1,22 @@
 $(document).ready(function() {
 
-	$("#header").load("header.html");
-	
-	$("#footer").load("footer.html");
-
 	var owl_carousel_main = $('.owl-carousel-main').owlCarousel({
-		items: 1,
 		loop: true,
-		margin: 0,
 		nav: false,
 		dots: false,
 		autoplay: true,
-		animateOut: 'fadeOut'
+		margin: 0,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 3,
+			},
+			1000: {
+				items: 4,
+			}
+		}
 	});
 
 	$(".btn-owl-carousel-main.btn-left").on('click', function (event) {
@@ -24,14 +29,6 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		owl_carousel_main.trigger('next.owl.carousel');
-	});
-
-	$("#header").on('click', ".btn-menu", function (event) {
-		event.preventDefault();
-
-		var seccion = $(this).attr('href');
-
-		$('body,html').animate({ scrollTop: $(seccion).offset().top }, 1000, 'swing');
 	});
 
 	$("#form-contact").submit(function (event) {
