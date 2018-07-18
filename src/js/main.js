@@ -31,6 +31,37 @@ $(document).ready(function() {
 		owl_carousel_main.trigger('next.owl.carousel');
 	});
 
+	var owl_carousel_services_public = $('.owl-carousel-services-public').owlCarousel({
+		loop: true,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		margin: 45,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 3,
+			},
+			1000: {
+				items: 3,
+			}
+		}
+	});
+
+	$(".btn-owl-carousel-services-public.btn-left").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_services_public.trigger('prev.owl.carousel');
+	});
+
+	$(".btn-owl-carousel-services-public.btn-right").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_services_public.trigger('next.owl.carousel');
+	});
+
 	$("#form-contact").submit(function (event) {
 		event.preventDefault();
 
