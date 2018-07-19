@@ -153,6 +153,12 @@
                     font-weight: 700;
                     font-size: 16px;
                     color: #FFF;
+
+                    span {
+                        top: 0px;
+                        margin-left: 5px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -277,10 +283,10 @@
         cursor: pointer;
 
         &:nth-of-type(1) {
-            background: transparent url('../img/arrow-carousel-left.png') center center no-repeat;
+            background: transparent url('../img/arrow-carousel-left.png') left center no-repeat;
         }
         &:nth-of-type(3) {
-            background: transparent url('../img/arrow-carousel-right.png') center center no-repeat;
+            background: transparent url('../img/arrow-carousel-right.png') right center no-repeat;
         }
     }
     
@@ -315,6 +321,12 @@
                     font-weight: 700;
                     font-size: 16px;
                     color: #000;
+
+                    span {
+                        top: 0px;
+                        margin-left: 5px;
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -322,7 +334,114 @@
 }
 
 .home-block-blog {
+    padding-bottom: 150px;
+    border-bottom: 1px solid #dadada;
     
+    hr {
+        margin: 75px 0px;
+        border-color: #dadada;
+    }
+
+    .row {
+
+        &:nth-of-type(2) {
+            
+            .col-md-6 {
+                display: flex;
+                flex-direction: column;
+
+               h2 {
+                    margin: 0px 0px 30px 0px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    color: #cfcfcf;
+                }
+
+                h3 {
+                    margin: 0px;
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 38px;
+                    color: #000;
+                }
+                
+                a {
+                    margin-top: 43px;
+                    padding: 6px 40px;
+                    border: 2px solid #00a1ff;
+                    background-color: #FFF;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: #000;
+                    align-self: flex-end;
+                }            
+            }
+        }
+
+        &:nth-of-type(3) {
+            padding-left: 9px;
+            padding-right: 9px;
+
+            .col-md-3 {
+                padding: 30px 5px 0px 5px;
+
+                img {
+                    width: 100%;
+                }
+
+                h2 {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #000;
+                }
+
+                p {
+                    line-height: 28px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #646464;
+                }
+            }
+        }
+    }
+}
+
+.home-block-footer-our-services {
+    padding: 30px 0px;
+
+    .col-md-8 {
+
+        p {
+            margin: 0px;
+            padding-top: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: #000;
+
+            span {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                color: #acd72f;
+            }
+        }
+    }
+    
+    .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        
+        a {
+            padding: 6px 40px;
+            border-color: #00a1ff;
+            background-color: #00a1ff;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFF;
+            align-self: flex-end;
+        }
+    }
 }
 
 @media (max-width: $screen-md) {
@@ -339,6 +458,28 @@
                         min-height: auto;
                     }
                 }
+            }
+        }
+    }
+
+    .home-block-blog {
+        padding-bottom: 70px;
+    }
+
+    .home-block-footer-our-services {
+
+        .col-md-8 {
+
+            p {
+                text-align: center
+            }
+        }
+        
+        .col-md-4 {
+            
+            a {
+                margin-top: 30px;
+                align-self: center;
             }
         }
     }
@@ -366,6 +507,22 @@
                     
                     &:nth-of-type(2) {
                         align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-block-blog {
+
+        .row {
+
+            &:nth-of-type(2) {
+                
+                .col-md-6 {
+
+                    a {
+                        align-self: center;
                     }
                 }
             }
