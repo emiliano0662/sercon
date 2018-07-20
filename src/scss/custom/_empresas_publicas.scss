@@ -1,0 +1,263 @@
+.public-enterprises-banner {
+    padding: 40px 0px 0px 0px;
+    background: transparent url('../img/bg-empresas-publicas-banner.jpg') center center / cover no-repeat;
+
+    .col-md-6 {
+        padding: 40px 15px 0px 15px;
+
+        h1 {
+            margin: 0px 0px 30px 0px;
+            font-weight: 700;
+            font-size: 13px;
+            color: #00a1ff;
+        }
+
+        h2 {
+            margin: 0px 0px 25px 0px;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 38px;
+            color: #FFF;
+        }
+
+        p {
+            margin: 0px 0px 20px 0px;
+            line-height: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: #FFF;
+        }
+
+        a {
+            padding: 8px 40px;
+            border-color: #acd72f;
+            background-color: #acd72f;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFF;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: -80px;
+        }
+
+        &:nth-of-type(1) {
+            padding-right: 70px;
+        }
+    }
+}
+
+.public-enterprises-consultancies {
+    padding-bottom: 60px;
+    background-color: #213364;
+
+    .row {
+
+        &:nth-of-type(1) {
+            
+            .col-md-12 {
+                padding: 50px 15px 50px 110px;
+                background: transparent url('../img/icon-empresas-publicas-1.png') 15px center no-repeat;
+        
+                h2 {
+                    margin: 0px 0px 4px 0px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 21px;
+                    color: #acd72f;
+                }
+                
+                p {
+                    margin: 0px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #FFF;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            
+            .col-md-12 {
+
+                hr {
+                    margin: 20px 0px 0px 0px;
+                    border-color: #314989;
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+            
+            .col-md-3 {
+                padding-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 21px;
+                    color: #acd72f;
+                }
+            }
+        }
+    }
+}
+
+.public-enterprises-support-in {
+    padding: 100px 0px 50px 0px;
+    background-color: #f7f7f7;
+
+    .col-md-12 {
+        margin-bottom: 35px;
+        
+        h3 {
+            margin: 0px;
+            font-weight: 700;
+            font-size: 13px;
+            color: #d6d6d6;
+        }
+    }
+
+    .col-md-6 {
+        margin-bottom: 65px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 0px 0px 30px 0px;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 38px;
+            color: #000;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            line-height: 30px;
+            font-size: 16px;
+            color: #646464;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0px;
+
+            li {
+                margin: 5px 0px 10px 0px;
+                padding-left: 55px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 30px;
+                font-size: 16px;
+                color: #646464;
+                background: transparent url('../img/icon-arrow-empresas-publicas.png') 35px 10px no-repeat;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:first-child {
+            padding-right: 40px;
+        }
+
+        &:last-child {
+            padding-left: 40px;
+        }
+    }
+
+    &.section-two{
+        padding: 70px 0px 0px 0px;
+        background-color: #FFF;
+
+        .col-md-6 {
+            margin-bottom: 40px;
+
+            img {
+                width: 120%;
+                max-width: 200%;
+                margin-right: -50%;
+            }
+        }
+    }
+
+    &.section-three{
+        padding: 80px 0px 30px 0px;
+        background-color: #FFF;
+        
+        .row {
+
+            &:nth-of-type(1) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+    .public-enterprises-banner {
+
+        .col-md-6 {
+
+            img {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+
+    .public-enterprises-banner {
+
+        .col-md-6 {
+
+            &:nth-of-type(1) {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .public-enterprises-consultancies {
+        padding-top: 90px;
+
+        .row {
+
+            &:nth-of-type(1) {
+                
+                .col-md-12 {
+                    padding: 50px 15px 30px 110px;
+                }
+            }
+        }
+    }
+
+    .public-enterprises-support-in {
+
+        .col-md-6 {
+
+            &:first-child {
+                padding-right: 15px;
+            }
+
+            &:last-child {
+                padding-left: 15px;
+            }
+        }
+
+        &.section-three{
+            padding: 0px 0px 30px 0px;
+            
+            .row {
+
+                &:nth-of-type(1) {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+}
