@@ -1,0 +1,101 @@
+.private-company-top {
+    padding: 12px 0px;
+    text-align: center;
+    background-color: #acd72f;
+
+    p {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #FFF;
+    }
+}
+
+.private-company-body {
+
+    > .container-fluid {
+
+        > .row {
+            
+            > .col-md-4 {
+                padding: 0px;
+
+                a {
+                    text-decoration: none;
+                }
+                
+                .content-link {
+                    min-height: 700px;
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    h2 {
+                        margin: 0px 0px 35px 0px;
+                        text-align: center;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 900;
+                        font-size: 37px;
+                        color: #FFF;
+                    }
+                }
+                
+                &:nth-of-type(1) {
+                                        
+                    .content-link {
+                        background: transparent url('../img/bg-empresas-privadas-aseo.jpg') center center / cover no-repeat;
+                    }
+                }
+    
+                &:nth-of-type(2) {
+                                        
+                    .content-link {
+                        background: transparent url('../img/bg-empresas-privadas-mensajeria.jpg') center center / cover no-repeat;
+                    }
+                }
+    
+                &:nth-of-type(3) {
+                    
+                    .content-link {
+                        background: transparent url('../img/bg-empresas-privadas-domesticos.jpg') center center / cover no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.private-company-bottom {
+    padding: 45px 0px;
+    background-color: #00a1ff;
+
+    h3 {
+        margin: 0px 0px 12px 0px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 38px;
+        color: #FFF;
+    }
+    
+    p {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #FFF;
+    }
+
+    .col-md-4 {
+        padding: 30px 15px 0px 15px;
+
+        .btn-default {
+            padding: 13px 45px;
+            border-color: #FFF;
+            background-color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #00a1ff;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+        }
+    }
+}
